@@ -89,7 +89,7 @@ export default function CustomSectionForm({
 
   return (
     <div className="w-full">
-      <div className="flex justify-between items-center p-5 bg-white">
+      <div className="flex justify-between items-center p-5 bg-white rounded-xl">
         <div className="flex items-center gap-2 text-xl font-bold">
           {icon} {text}
         </div>
@@ -100,7 +100,7 @@ export default function CustomSectionForm({
         <div
           key={index}
           onClick={() => handleClick(index)}
-          className={`p-4 bg-white my-2  ${
+          className={`p-4 bg-white my-2 rounded-xl ${
             isFormOpen ? "hidden" : `hover:bg-slate-200 cursor-pointer`
           } `}
         >
@@ -128,21 +128,21 @@ export default function CustomSectionForm({
             <CustomLabel
               name="startDate"
               handleType={handleType}
-              value={formData.subTitle}
+              value={formData.startDate}
             >
               Start Date
             </CustomLabel>
             <CustomLabel
               name="endDate"
               handleType={handleType}
-              value={formData.subTitle}
+              value={formData.endDate}
             >
               End Date
             </CustomLabel>
             <CustomLabel
               name="location"
               handleType={handleType}
-              value={formData.subTitle}
+              value={formData.location}
             >
               Location
             </CustomLabel>

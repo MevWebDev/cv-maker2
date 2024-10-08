@@ -16,7 +16,7 @@ function App() {
   const [personal, setPersonal] = useState({
     fullName: "Szymon Grysiewicz",
     email: "szymongrysiewicz@gmail.com",
-    phone: "727720971",
+    phone: "213-742-069",
     location: "Gdańsk, Poland",
   });
 
@@ -54,7 +54,7 @@ function App() {
   }
 
   return (
-    <div className="h-full p-0 bg-bg flex flex-col lg:flex-row justify-center">
+    <div className="h-full md:h-screen p-0 bg-bg flex flex-col lg:flex-row justify-center">
       <div className="flex flex-col items-center gap-5 my-10 mx-5 lg:w-1/4">
         <PersonalDetails handleType={handleType} />
         <CustomSectionForm
