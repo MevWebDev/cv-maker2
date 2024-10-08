@@ -28,10 +28,7 @@ export default function CV({ personal, education, experience }: CVProps) {
   const { fullName, email, phone, location } = personal;
 
   return (
-    <div
-      style={{ height: "900px" }}
-      className="mx-5 bg-white lg:mt-10 flex flex-col gap-5 lg:w-2/5 mb-4  "
-    >
+    <div className="mx-5 bg-white lg:mt-10 flex flex-col gap-5 lg:w-2/5 mb-4 h-[80vh] md:h-9/10 ">
       <Header
         fullName={fullName}
         email={email}
